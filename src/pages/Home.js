@@ -8,8 +8,8 @@ const Home = () => {
     return (
         <div className="container space-background">
             <div className="jumbotron">
-                <h2>Welcome to Music Mate</h2>
-                <h2>Your Music Media Archive</h2>
+                <h2 className="text-center">Welcome to Music Mate</h2>
+                <h4 className="text-center">Your Music Media Archive</h4>
                 <p className="lead">Catalog all of your vinyl, CD, and tape media in one place.  Create a list
                     of the albums and singles you'd like to add to your music collection.
                 </p>
