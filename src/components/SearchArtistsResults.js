@@ -4,6 +4,8 @@ import Spinner from './Spinner';
 
 const SearchArtistsResults = (props) => {
 
+    console.log(props);
+
     if (props.loading) {
         return <Spinner />
     } else {

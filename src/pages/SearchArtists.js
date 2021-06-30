@@ -14,7 +14,7 @@ const SearchArtists = () => {
     const searchArtists = async (e) => {
     
         const TOKEN = 'IdAUSAlVjONIwSPTnimPvVkbNKLyIbZsLPHZhwoQ'; 
-        const baseURL = "https://api.discogs.com/database/search?q=" + artistName + "&token=" + TOKEN;
+        const baseURL = "https://api.discogs.com/database/search?type=artist&token=" + TOKEN + "&artist=" + artistName;
     
         e.preventDefault();
         try {
@@ -24,7 +24,7 @@ const SearchArtists = () => {
             const res = await axios.get(URL);
             // console.log(res.data);
             console.log(res.data);
-            // setArtists(res.data.data.results);
+            setArtists(res.data.results);
             setLoading(false);
         }
         catch(err) {
@@ -37,7 +37,7 @@ const SearchArtists = () => {
         console.log(e.target.value);
     }
 
-
+    console.log(artists);
     return (
         <div className="container space-background">
             <div className="jumbotron">
@@ -47,7 +47,6 @@ const SearchArtists = () => {
                         <div className="form-group form-inline row ml-5">
                             <label htmlFor="characterName" className="space-right">Artist Name: </label>
                             <input type="text" name={artistName} value={artistName} onChange={artistNameChangeHandler} className="form-control" id="character-name" />
-                            <p>Search by either a full or partial character name</p>
                         </div>
                         <div>
                             <button type="submit" className="btn btn-primary mt-4 mb-4" onClick={searchArtists}>Submit</button>
