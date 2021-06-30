@@ -15,7 +15,7 @@ const Home = () => {
                 </p>
                 <p className="lead mt-3 mb-5">My code repo for this app can be found in my <a  className="text-primary" href="https://github.com/swillrich5/music-mate">GitHub</a>.  Also, here's a link to my <a className="text-primary" href="https://www.scottwillrich.com/">portfolio site</a>.
                 </p>
-                <Link className="row justify-content-center" to='/characters'>
+                <Link className="row justify-content-center" to='/artists'>
                     <div className="card col-md-12 col-lg-3 justify-content-center shadow-lg bg-light rounded">
                         <img className="artist-img card-img-top mx-auto pt-3" src={artists} alt="artists"/>
                         <div className="card-body">

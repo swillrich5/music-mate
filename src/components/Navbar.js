@@ -20,9 +20,9 @@ const Navbar = ({ icon, title }) => {
                             <span>{"    "}</span>API Queries
                         </div>
                         <div className="dropdown-menu heading" aria-labelledby="navbarDropdown">    
-                            <Link to='/characters' className="dropdown-item"> Characters</Link>
+                            <Link to='/artists' className="dropdown-item"> Artists</Link>
                             {/* <a className="dropdown-item" href="javascript:void(0)">Character Search</a> */}
-                            <Link to='/characters' className="dropdown-item"> More Queries Coming Soon!</Link>
+                            <Link to='/artists' className="dropdown-item"> More Queries Coming Soon!</Link>
                         </div>
                     </li>
                 </ul>
